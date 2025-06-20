@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PostsList from "./components/posts/PostsList";
-import PostPage from "./components/posts/PostPage";
+import UsersList from "./components/posts/UsersList";
+import UserPage from "./components/posts/UserPage";
 
 const App = () => (
   <Router>
     <Routes>
-      <Route path="/" element={<PostsList />} />
-      <Route path="/posts/:id" element={<PostPage />} />
+      <Route path="/" element={<UsersList />} />
+      <Route path="/posts/:id" element={<UserPage />} />
     </Routes>
   </Router>
 );
